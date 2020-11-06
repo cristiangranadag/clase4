@@ -2,24 +2,25 @@
 // semana ahorra 15% de su sueldo (considere cuatro semanas por mes y que no
 //    cambia el sueldo)
 
+
 let semana;
 let mes;
-let sueldo;
 let dinero;
 let ano;
 
+dinero = Number(prompt("Ingrese cuanto sueldo? "));
+
+// let total = Ano(dinero)
 
 
-dinero = Number(prompt("Ingrese cuantos ahorra: "));
-ano = sueldo(dinero);
 
-
-alert("Total ahorra : "+ano);
-alert("cada semana ahorra 15% "+ semana);
-
-function sueldo(dinero){
-    semana = dinero*.15;
+function Total(dinero) {
+    semana = dinero*0.15;
     mes = 4* semana;
     ano = 12*mes;
     return ano;
 }
+
+alert("Total ahorra : "+ Total(dinero));
+
+/*alert("cada semana ahorra 15% de sueldo "+ semana);*/
